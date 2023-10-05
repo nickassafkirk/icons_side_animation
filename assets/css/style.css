@@ -16,7 +16,8 @@
     font-family: 'Jolly Lodger', cursive;
   }
 
-  #placeholder-container {
+  #placeholder-container,
+  #icons-container {
     text-align: center;
     width: 100vw;
     height: 100vh;
@@ -37,4 +38,34 @@
 
   #inner-placeholder > h2 {
     font-size: 5rem;
+  }
+
+  #icons-container {
+    flex-direction: column;
+  }
+
+  .icon {
+    width: 25vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* Slide in animations */
+
+  @keyframes slide_first {
+    0% {
+        left: -50vw
+    }
+
+    100% {
+        left: 25vw;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .slideFirst {
+      animation-name: slide_first;
+      animation-duration: 1s;
+      animation-iteration-count: 1;
+    }
   }
