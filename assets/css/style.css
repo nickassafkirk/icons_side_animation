@@ -15,3 +15,26 @@
   h4 {
     font-family: 'Jolly Lodger', cursive;
   }
+
+  #placeholder-container {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #inner-placeholder {
+    border: 3px solid aqua;
+    border-radius: 15px;
+    padding: 3rem;
+  }
+
+  #inner-placeholder > h1 {
+    font-size: 7rem;
+  }
+
+  #inner-placeholder > h2 {
+    font-size: 5rem;
+  }
